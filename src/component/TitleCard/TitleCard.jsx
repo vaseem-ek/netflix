@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import './TitleCard.css'
 import cards_data from '../../assets/cards/Cards_data'
 
-function TitleCard() {
+function TitleCard({title,category}) {
   // const cardsRef=useRef()
   // const handleWheel=(event)=>{
   //   event.preventDefault()
@@ -13,7 +13,7 @@ function TitleCard() {
   // },[])
   return (
     <div className='title-cards'>
-      <h2>Popular on Netflix</h2>
+      <h2>{title?title:"Popular on Netflix"}</h2>
       {/* <div className='card-list' ref={cardsRef}> */}
       <div className='card-list' >
         {

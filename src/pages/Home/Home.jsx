@@ -6,6 +6,7 @@ import hero_title from '../../assets/hero_title.png'
 import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import TitleCard from '../../component/TitleCard/TitleCard'
+import Footer from '../../component/Footer/Footer'
 
 function Home() {
   return (
@@ -23,7 +24,13 @@ function Home() {
             <TitleCard/>
           </div>
         </div>
-      
+      <div className="more-cards">
+        <TitleCard title={"Blockbuster Movies"}/>
+        <TitleCard title={"Only on netflix"}/>
+        <TitleCard title={"Upcoming"}/>
+        <TitleCard title={"Top pics for you"}/>
+      </div>
+      <Footer/>
     </div>
   )
 }
